@@ -20,10 +20,11 @@
 import Foundation
 #if os(iOS) || os(tvOS)
 import UIKit
-#else
+#elseif os(macOS)
 import AppKit
 #endif
 
+#if os(iOS) || os(tvOS) || os(macOS)
 /**
  Property wrapper which returns a dynamic `NSColor` or `UIColor` that will return the appropriate color.
  
@@ -92,3 +93,4 @@ struct DynamicColor {
         self.darkModeColor = darkModeColor
     }
 }
+#endif

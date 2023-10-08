@@ -29,6 +29,8 @@ typealias ROMColor = UIColor
  Typealias for view values on iOS/tvOS.
  */
 typealias ROMView = UIView
+#elseif os(watchOS)
+import WatchKit
 #else
 import AppKit
 
