@@ -24,11 +24,11 @@ import UIKit
 /**
  Typealis for color values on iOS/tvOS.
  */
-typealias ROMColor = UIColor
+public typealias ROMColor = UIColor
 /**
  Typealias for view values on iOS/tvOS.
  */
-typealias ROMView = UIView
+public typealias ROMView = UIView
 #elseif os(watchOS)
 import WatchKit
 #else
@@ -37,9 +37,9 @@ import AppKit
 /**
  Typealias for color values on macOS.
  */
-typealias ROMColor = NSColor
+public typealias ROMColor = NSColor
 /**
  Typealias for view values on macOS.
  */
-typealias ROMView = NSView
+public typealias ROMView = NSView
 #endif
