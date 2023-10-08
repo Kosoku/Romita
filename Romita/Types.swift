@@ -1,5 +1,5 @@
 //
-//  Romita.h
+//  Types.swift
 //  Romita
 //
 //  Created by William Towe on 10/7/23.
@@ -17,14 +17,27 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-#import <Foundation/Foundation.h>
+import Foundation
+#if os(iOS) || os(tvOS)
+import UIKit
 
-//! Project version number for Romita.
-FOUNDATION_EXPORT double RomitaVersionNumber;
+/**
+ Typealis for color values on iOS/tvOS.
+ */
+typealias ROMColor = UIColor
+/**
+ Typealias for view values on iOS/tvOS.
+ */
+typealias ROMView = UIView
+#else
+import AppKit
 
-//! Project version string for Romita.
-FOUNDATION_EXPORT const unsigned char RomitaVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <Romita/PublicHeader.h>
-
-
+/**
+ Typealias for color values on macOS.
+ */
+typealias ROMColor = NSColor
+/**
+ Typealias for view values on macOS.
+ */
+typealias ROMView = NSView
+#endif

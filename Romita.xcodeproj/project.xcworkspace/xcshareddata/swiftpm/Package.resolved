@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "feige",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Kosoku/Feige",
+      "state" : {
+        "revision" : "500f63b760625a14607c9db52aa4ff8fdaa010dd",
+        "version" : "1.3.0"
+      }
+    }
+  ],
+  "version" : 2
+}

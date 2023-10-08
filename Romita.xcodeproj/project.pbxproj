@@ -10,6 +10,12 @@
 		796567C82AD1E05E007EE6CB /* Romita.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796567BF2AD1E05E007EE6CB /* Romita.framework */; };
 		796567CD2AD1E05E007EE6CB /* RomitaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796567CC2AD1E05E007EE6CB /* RomitaTests.swift */; };
 		796567CE2AD1E05E007EE6CB /* Romita.h in Headers */ = {isa = PBXBuildFile; fileRef = 796567C22AD1E05E007EE6CB /* Romita.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		796567DD2AD1E507007EE6CB /* DynamicColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796567DC2AD1E507007EE6CB /* DynamicColor.swift */; };
+		796DF61F2AD2247000A18A4C /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796DF61E2AD2247000A18A4C /* UIApplication+Extensions.swift */; };
+		796DF6222AD2278000A18A4C /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796DF6212AD2278000A18A4C /* UICollectionView+Extensions.swift */; };
+		796DF6242AD2280000A18A4C /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796DF6232AD2280000A18A4C /* UIView+Extensions.swift */; };
+		796DF6272AD22A6F00A18A4C /* Feige in Frameworks */ = {isa = PBXBuildFile; productRef = 796DF6262AD22A6F00A18A4C /* Feige */; };
+		796DF6292AD236B200A18A4C /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796DF6282AD236B200A18A4C /* Types.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +33,12 @@
 		796567C22AD1E05E007EE6CB /* Romita.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Romita.h; sourceTree = "<group>"; };
 		796567C72AD1E05E007EE6CB /* RomitaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RomitaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		796567CC2AD1E05E007EE6CB /* RomitaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomitaTests.swift; sourceTree = "<group>"; };
+		796567DC2AD1E507007EE6CB /* DynamicColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicColor.swift; sourceTree = "<group>"; };
+		796DF61E2AD2247000A18A4C /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		796DF6202AD226D400A18A4C /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		796DF6212AD2278000A18A4C /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		796DF6232AD2280000A18A4C /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		796DF6282AD236B200A18A4C /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				796DF6272AD22A6F00A18A4C /* Feige in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +64,7 @@
 		796567B52AD1E05E007EE6CB = {
 			isa = PBXGroup;
 			children = (
+				796DF6202AD226D400A18A4C /* Package.swift */,
 				796567C12AD1E05E007EE6CB /* Romita */,
 				796567CB2AD1E05E007EE6CB /* RomitaTests */,
 				796567C02AD1E05E007EE6CB /* Products */,
@@ -70,6 +84,9 @@
 			isa = PBXGroup;
 			children = (
 				796567C22AD1E05E007EE6CB /* Romita.h */,
+				796DF6282AD236B200A18A4C /* Types.swift */,
+				796567DC2AD1E507007EE6CB /* DynamicColor.swift */,
+				796DF61D2AD2245A00A18A4C /* iOS */,
 			);
 			path = Romita;
 			sourceTree = "<group>";
@@ -80,6 +97,16 @@
 				796567CC2AD1E05E007EE6CB /* RomitaTests.swift */,
 			);
 			path = RomitaTests;
+			sourceTree = "<group>";
+		};
+		796DF61D2AD2245A00A18A4C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				796DF61E2AD2247000A18A4C /* UIApplication+Extensions.swift */,
+				796DF6212AD2278000A18A4C /* UICollectionView+Extensions.swift */,
+				796DF6232AD2280000A18A4C /* UIView+Extensions.swift */,
+			);
+			path = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +137,9 @@
 			dependencies = (
 			);
 			name = Romita;
+			packageProductDependencies = (
+				796DF6262AD22A6F00A18A4C /* Feige */,
+			);
 			productName = Romita;
 			productReference = 796567BF2AD1E05E007EE6CB /* Romita.framework */;
 			productType = "com.apple.product-type.framework";
@@ -139,11 +169,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				CLASSPREFIX = ROM;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = "Kosoku Interactive, LLC.";
 				TargetAttributes = {
 					796567BE2AD1E05E007EE6CB = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
 					};
 					796567C62AD1E05E007EE6CB = {
 						CreatedOnToolsVersion = 15.0;
@@ -159,6 +192,9 @@
 				Base,
 			);
 			mainGroup = 796567B52AD1E05E007EE6CB;
+			packageReferences = (
+				796DF6252AD22A6F00A18A4C /* XCRemoteSwiftPackageReference "Feige" */,
+			);
 			productRefGroup = 796567C02AD1E05E007EE6CB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -191,6 +227,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				796DF61F2AD2247000A18A4C /* UIApplication+Extensions.swift in Sources */,
+				796567DD2AD1E507007EE6CB /* DynamicColor.swift in Sources */,
+				796DF6242AD2280000A18A4C /* UIView+Extensions.swift in Sources */,
+				796DF6292AD236B200A18A4C /* Types.swift in Sources */,
+				796DF6222AD2278000A18A4C /* UICollectionView+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +377,7 @@
 		796567D22AD1E05E007EE6CB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -345,9 +387,9 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Kosoku Interactive, LLC.";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
@@ -356,24 +398,29 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.5;
-				MARKETING_VERSION = 1.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kosoku.Romita;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = auto;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx watchos watchsimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,3,4";
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 			};
 			name = Debug;
 		};
 		796567D32AD1E05E007EE6CB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -383,9 +430,9 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Kosoku Interactive, LLC.";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
@@ -394,24 +441,28 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.5;
-				MARKETING_VERSION = 1.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kosoku.Romita;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = auto;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx watchos watchsimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,3,4";
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 			};
 			name = Release;
 		};
 		796567D52AD1E05E007EE6CB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 74KPPW2K35;
@@ -432,6 +483,7 @@
 		796567D62AD1E05E007EE6CB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 74KPPW2K35;
@@ -480,6 +532,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		796DF6252AD22A6F00A18A4C /* XCRemoteSwiftPackageReference "Feige" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Kosoku/Feige";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		796DF6262AD22A6F00A18A4C /* Feige */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 796DF6252AD22A6F00A18A4C /* XCRemoteSwiftPackageReference "Feige" */;
+			productName = Feige;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 796567B62AD1E05E007EE6CB /* Project object */;
 }
