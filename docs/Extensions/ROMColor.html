@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>UIApplication Extension Reference</title>
+    <title>ROMColor Extension Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Extension/UIApplication" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Extension/ROMColor" class="dashAnchor"></a>
 
-    <a title="UIApplication Extension Reference"></a>
+    <a title="ROMColor Extension Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -50,7 +50,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html">Romita Reference</a>
       <img class="carat" src="../img/carat.png" alt=""/>
-      UIApplication Extension Reference
+      ROMColor Extension Reference
     </p>
 
     <div class="content-wrapper">
@@ -128,7 +128,14 @@
 
         <section class="section">
           <div class="section-content top-matter">
-            <h1>UIApplication</h1>
+            <h1>ROMColor</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">extension</span> <span class="kt"><a href="../Typealiases.html#/s:6Romita8ROMColora">ROMColor</a></span></code></pre>
+
+                </div>
+              </div>
             
           </div>
         </section>
@@ -137,11 +144,11 @@
           <div class="section-content">
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Public%20Properties"></a>
-                <a name="//apple_ref/swift/Section/Public Properties" class="dashAnchor"></a>
+                <a name="/Public%20Types"></a>
+                <a name="//apple_ref/swift/Section/Public Types" class="dashAnchor"></a>
                 <div class="section-name-container">
-                  <a class="section-name-link" href="#/Public%20Properties"></a>
-                  <h3 class="section-name"><span>Public Properties</span>
+                  <a class="section-name-link" href="#/Public%20Types"></a>
+                  <h3 class="section-name"><span>Public Types</span>
 </h3>
                 </div>
               </div>
@@ -149,9 +156,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Property/isBackgrounded" class="dashAnchor"></a>
-                    <a class="token" href="#/">isBackgrounded</a>
+                    <a name="/s:So7NSColorC6RomitaE10ColorSpaceO"></a>
+                    <a name="//apple_ref/swift/Enum/ColorSpace" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So7NSColorC6RomitaE10ColorSpaceO">ColorSpace</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -159,13 +166,17 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns whether the receiver is backgrounded.</p>
-<div class="aside aside-note">
-    <p class="aside-title">Note</p>
-    This will always execute on the main thread
+                        <p>Represents a supported color space for random color generation.</p>
 
-</div>
+                        <a href="../Extensions/ROMColor/ColorSpace.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">ColorSpace</span></code></pre>
 
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -186,9 +197,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Method/openSettings(options:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">openSettings(options:<wbr>completion:<wbr>)</a>
+                    <a name="/s:So7NSColorC6RomitaE6random12inColorSpace5alphaA2bCE0eF0O_14CoreFoundation7CGFloatVSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/random(inColorSpace:alpha:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So7NSColorC6RomitaE6random12inColorSpace5alphaA2bCE0eF0O_14CoreFoundation7CGFloatVSgtFZ">random(inColorSpace:<wbr>alpha:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -196,13 +207,51 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Open the application specific settings in the <em>Settings</em> app.</p>
-<div class="aside aside-see-also">
-    <p class="aside-title">See also</p>
-    <a href="https://developer.apple.com/documentation/uikit/uiapplication/1648685-open">https://developer.apple.com/documentation/uikit/uiapplication/1648685-open</a>
+                        <p>Returns a random color created in the provided <code>colorSpace</code> and <code>alpha</code> value.</p>
 
-</div>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">random</span><span class="p">(</span><span class="n">inColorSpace</span> <span class="nv">colorSpace</span><span class="p">:</span> <span class="kt"><a href="../Extensions/ROMColor/ColorSpace.html">ColorSpace</a></span> <span class="o">=</span> <span class="o">.</span><span class="nf">default</span><span class="p">(),</span> <span class="nv">alpha</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:6Romita8ROMColora">ROMColor</a></span></code></pre>
 
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>colorSpace</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The color space to create the random color in, the default is <code><a href="../Extensions/ROMColor/ColorSpace.html#/s:So7NSColorC6RomitaE10ColorSpaceO7defaultAEyFZ">ColorSpace.default()</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>alpha</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The alpha value for the random color, nil means a random value in the range of <code>0.0 &lt;= 1.0</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The random color</p>
                       </div>
                     </section>
                   </div>

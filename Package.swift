@@ -22,6 +22,12 @@ import PackageDescription
 
 let package = Package(
     name: "Romita",
+    platforms: [
+        .iOS(.v14),
+        .macOS(.v11),
+        .tvOS(.v13),
+        .watchOS(.v5),
+    ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
@@ -31,6 +37,7 @@ let package = Package(
     dependencies: [
         // other dependencies
         .package(url: "https://github.com/Kosoku/Feige", from: "2.0.1"),
+        .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.3.0"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.

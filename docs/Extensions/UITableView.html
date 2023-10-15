@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>UIApplication Extension Reference</title>
+    <title>UITableView Extension Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Extension/UIApplication" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Extension/UITableView" class="dashAnchor"></a>
 
-    <a title="UIApplication Extension Reference"></a>
+    <a title="UITableView Extension Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -50,7 +50,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html">Romita Reference</a>
       <img class="carat" src="../img/carat.png" alt=""/>
-      UIApplication Extension Reference
+      UITableView Extension Reference
     </p>
 
     <div class="content-wrapper">
@@ -128,50 +128,13 @@
 
         <section class="section">
           <div class="section-content top-matter">
-            <h1>UIApplication</h1>
+            <h1>UITableView</h1>
             
           </div>
         </section>
 
         <section class="section">
           <div class="section-content">
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Public%20Properties"></a>
-                <a name="//apple_ref/swift/Section/Public Properties" class="dashAnchor"></a>
-                <div class="section-name-container">
-                  <a class="section-name-link" href="#/Public%20Properties"></a>
-                  <h3 class="section-name"><span>Public Properties</span>
-</h3>
-                </div>
-              </div>
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Property/isBackgrounded" class="dashAnchor"></a>
-                    <a class="token" href="#/">isBackgrounded</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Returns whether the receiver is backgrounded.</p>
-<div class="aside aside-note">
-    <p class="aside-title">Note</p>
-    This will always execute on the main thread
-
-</div>
-
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
             <div class="task-group">
               <div class="task-name-container">
                 <a name="/Public%20Functions"></a>
@@ -187,8 +150,8 @@
                   <div>
                     <code>
                     <a name="/"></a>
-                    <a name="//apple_ref/swift/Method/openSettings(options:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">openSettings(options:<wbr>completion:<wbr>)</a>
+                    <a name="//apple_ref/swift/Method/registerCellClass(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/">registerCellClass(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -196,12 +159,74 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Open the application specific settings in the <em>Settings</em> app.</p>
+                        <p>Registers the provided cell <code>class</code> for reuse.</p>
 <div class="aside aside-see-also">
     <p class="aside-title">See also</p>
-    <a href="https://developer.apple.com/documentation/uikit/uiapplication/1648685-open">https://developer.apple.com/documentation/uikit/uiapplication/1648685-open</a>
+    <code><a href="../Extensions/UITableView.html#/dequeueReusableCellClass(_:for:)">UITableView.dequeueReusableCellClass(_:for:)</a></code>
 
 </div>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Method/registerHeaderFooterViewClass(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/">registerHeaderFooterViewClass(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Registers the provided header footer view <code>class</code> for reuse.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Extensions/UITableView.html#/dequeueReusableHeaderFooterViewClass(_:)">UITableView.dequeueReusableHeaderFooterViewClass(_:)</a></code>
+
+</div>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Method/dequeueReusableCellClass(_:for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/">dequeueReusableCellClass(_:<wbr>for:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dequeues a reusable cell of the provided <code>class</code>.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Method/dequeueReusableHeaderFooterViewClass(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/">dequeueReusableHeaderFooterViewClass(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dequeues a reusable header footer view of the provided <code>class</code>.</p>
 
                       </div>
                     </section>

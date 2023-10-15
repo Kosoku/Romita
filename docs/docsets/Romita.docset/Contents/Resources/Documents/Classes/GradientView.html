@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>UIView Extension Reference</title>
+    <title>GradientView Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Extension/UIView" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Class/GradientView" class="dashAnchor"></a>
 
-    <a title="UIView Extension Reference"></a>
+    <a title="GradientView Class Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -50,7 +50,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html">Romita Reference</a>
       <img class="carat" src="../img/carat.png" alt=""/>
-      UIView Extension Reference
+      GradientView Class Reference
     </p>
 
     <div class="content-wrapper">
@@ -128,8 +128,16 @@
 
         <section class="section">
           <div class="section-content top-matter">
-            <h1>UIView</h1>
-            
+            <h1>GradientView</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">GradientView</span> <span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:6Romita7ROMViewa">ROMView</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>View backed by a <code>CAGradientLayer</code>.</p>
+
           </div>
         </section>
 
@@ -149,9 +157,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Variable/defaultNibName" class="dashAnchor"></a>
-                    <a class="token" href="#/">defaultNibName</a>
+                    <a name="/s:6Romita12GradientViewC6colorsSaySo7NSColorCGvp"></a>
+                    <a name="//apple_ref/swift/Property/colors" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Romita12GradientViewC6colorsSaySo7NSColorCGvp">colors</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -159,8 +167,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns the default nib name for the receiver which is its class name.</p>
+                        <p>Get/set the colors that are used by the underlying <code>CAGradientLayer</code>.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">colors</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Typealiases.html#/s:6Romita8ROMColora">ROMColor</a></span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -168,9 +184,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Variable/defaultReuseIdentifier" class="dashAnchor"></a>
-                    <a class="token" href="#/">defaultReuseIdentifier</a>
+                    <a name="/s:6Romita12GradientViewC9locationsSaySfGvp"></a>
+                    <a name="//apple_ref/swift/Property/locations" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Romita12GradientViewC9locationsSaySfGvp">locations</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -178,8 +194,85 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns the default reuse identifier for the receiver which is its class name.</p>
+                        <p>Get/set the locations that used as the gradient stops by the underlying <code>CAGradientLayer</code>.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    The locations must be in the range of <code>0.0 &lt;= 1.0</code> <strong>AND</strong> monotonically increasing
 
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">locations</span><span class="p">:</span> <span class="p">[</span><span class="kt">Float</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Romita12GradientViewC10startPointSo7CGPointVvp"></a>
+                    <a name="//apple_ref/swift/Property/startPoint" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Romita12GradientViewC10startPointSo7CGPointVvp">startPoint</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get/set the start point of the underlying <code>CAGradientLayer</code>.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    The point is defined in the unit coordinate space
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">startPoint</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/ROMPoint">ROMPoint</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Romita12GradientViewC8endPointSo7CGPointVvp"></a>
+                    <a name="//apple_ref/swift/Property/endPoint" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Romita12GradientViewC8endPointSo7CGPointVvp">endPoint</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get/set the end point of the underlying <code>CAGradientLayer</code>.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    The point is defined in the unit coordinate space
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">endPoint</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/ROMPoint">ROMPoint</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -187,13 +280,22 @@
               </ul>
             </div>
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Override%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Override Properties" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Override%20Properties"></a>
+                  <h3 class="section-name"><span>Override Properties</span>
+</h3>
+                </div>
+              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
                     <a name="/"></a>
-                    <a name="//apple_ref/swift/Property/firstResponder" class="dashAnchor"></a>
-                    <a class="token" href="#/">firstResponder</a>
+                    <a name="//apple_ref/swift/Variable/layerClass" class="dashAnchor"></a>
+                    <a class="token" href="#/">layerClass</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -201,46 +303,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns the first responder or nil if nothing is currently first responder.</p>
-
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Property/recursiveSubviews" class="dashAnchor"></a>
-                    <a class="token" href="#/">recursiveSubviews</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Returns a list of all the receiver&rsquo;s subviews, computed recursively.</p>
-
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Property/viewController" class="dashAnchor"></a>
-                    <a class="token" href="#/">viewController</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Returns the receiver&rsquo;s owning view controller or if it cannot be found.</p>
-
+                        
                       </div>
                     </section>
                   </div>
@@ -261,9 +324,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Method/addSubviews(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">addSubviews(_:<wbr>)</a>
+                    <a name="/s:6Romita12GradientViewC5setupyyF"></a>
+                    <a name="//apple_ref/swift/Method/setup()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Romita12GradientViewC5setupyyF">setup()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -271,98 +334,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Adds the provided <code>subviews</code> to the receiver.</p>
+                        <p>Performs common setup during initialization.</p>
 
                       </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Method/removeAllSubviews()" class="dashAnchor"></a>
-                    <a class="token" href="#/">removeAllSubviews()</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Removes all the receiver&rsquo;s subviews.</p>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">setup</span><span class="p">()</span></code></pre>
 
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Method/startShakeAnimation(duration:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">startShakeAnimation(duration:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Starts a shake animation that will last <code>duration</code> seconds.</p>
-<div class="aside aside-see-also">
-    <p class="aside-title">See also</p>
-    <code><a href="../Extensions/UIView.html#/stopShakeAnimation()">UIView.stopShakeAnimation()</a></code>
-
-</div>
-
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Method/stopShakeAnimation()" class="dashAnchor"></a>
-                    <a class="token" href="#/">stopShakeAnimation()</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Stops any in progress shake animation.</p>
-<div class="aside aside-see-also">
-    <p class="aside-title">See also</p>
-    <code><a href="../Extensions/UIView.html#/startShakeAnimation(duration:)">UIView.startShakeAnimation(duration:)</a></code>
-
-</div>
-
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Method/viewOfClass(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">viewOfClass(_:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Returns the first view of <code>class</code> walking up the view hierarchy or nil if one cannot be found.</p>
-
+                        </div>
                       </div>
                     </section>
                   </div>

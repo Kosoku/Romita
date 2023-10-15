@@ -11,9 +11,6 @@
 		796567CD2AD1E05E007EE6CB /* RomitaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796567CC2AD1E05E007EE6CB /* RomitaTests.swift */; };
 		796567CE2AD1E05E007EE6CB /* Romita.h in Headers */ = {isa = PBXBuildFile; fileRef = 796567C22AD1E05E007EE6CB /* Romita.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		796567DD2AD1E507007EE6CB /* DynamicColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796567DC2AD1E507007EE6CB /* DynamicColor.swift */; };
-		796DF61F2AD2247000A18A4C /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796DF61E2AD2247000A18A4C /* UIApplication+Extensions.swift */; };
-		796DF6222AD2278000A18A4C /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796DF6212AD2278000A18A4C /* UICollectionView+Extensions.swift */; };
-		796DF6242AD2280000A18A4C /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796DF6232AD2280000A18A4C /* UIView+Extensions.swift */; };
 		796DF6272AD22A6F00A18A4C /* Feige in Frameworks */ = {isa = PBXBuildFile; productRef = 796DF6262AD22A6F00A18A4C /* Feige */; };
 		796DF6292AD236B200A18A4C /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796DF6282AD236B200A18A4C /* Types.swift */; };
 		79B4DFB92ADB744D0073D2B0 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4DFB82ADB744D0073D2B0 /* GradientView.swift */; };
@@ -23,13 +20,11 @@
 		79B4DFCA2ADB7C310073D2B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79B4DFC92ADB7C310073D2B0 /* Assets.xcassets */; };
 		79B4DFCD2ADB7C310073D2B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B4DFCB2ADB7C310073D2B0 /* LaunchScreen.storyboard */; };
 		79B4DFD32ADB7DB50073D2B0 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4DFD22ADB7DB50073D2B0 /* ViewModel.swift */; };
-		79B4DFD52ADB7EC50073D2B0 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4DFD42ADB7EC50073D2B0 /* UITableView+Extensions.swift */; };
 		79B4DFD72ADB81700073D2B0 /* Romita.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796567BF2AD1E05E007EE6CB /* Romita.framework */; };
 		79B4DFD82ADB81700073D2B0 /* Romita.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 796567BF2AD1E05E007EE6CB /* Romita.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		79B4DFDD2ADB86550073D2B0 /* GradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4DFDC2ADB86550073D2B0 /* GradientViewController.swift */; };
 		79B4DFDF2ADB8FDC0073D2B0 /* ROMColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4DFDE2ADB8FDC0073D2B0 /* ROMColor+Extensions.swift */; };
 		79B4DFE12ADB9F820073D2B0 /* ShakeAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4DFE02ADB9F820073D2B0 /* ShakeAnimationViewController.swift */; };
-		79B4DFE32ADBA0F10073D2B0 /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4DFE22ADBA0F10073D2B0 /* UIStackView+Extensions.swift */; };
 		79B4DFEB2ADBA9060073D2B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4DFEA2ADBA9060073D2B0 /* AppDelegate.swift */; };
 		79B4DFED2ADBA9060073D2B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4DFEC2ADBA9060073D2B0 /* ViewController.swift */; };
 		79B4DFEF2ADBA9080073D2B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79B4DFEE2ADBA9080073D2B0 /* Assets.xcassets */; };
@@ -37,6 +32,11 @@
 		79B4DFF72ADBA9200073D2B0 /* Romita.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796567BF2AD1E05E007EE6CB /* Romita.framework */; };
 		79B4DFF82ADBA9200073D2B0 /* Romita.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 796567BF2AD1E05E007EE6CB /* Romita.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		79B4E0022ADBB3C80073D2B0 /* ROMView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4E0012ADBB3C80073D2B0 /* ROMView+Extensions.swift */; };
+		79B4E0082ADBCAD50073D2B0 /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4E0032ADBCAD40073D2B0 /* UIStackView+Extensions.swift */; };
+		79B4E0092ADBCAD50073D2B0 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4E0042ADBCAD50073D2B0 /* UITableView+Extensions.swift */; };
+		79B4E00A2ADBCAD50073D2B0 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4E0052ADBCAD50073D2B0 /* UICollectionView+Extensions.swift */; };
+		79B4E00B2ADBCAD50073D2B0 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4E0062ADBCAD50073D2B0 /* UIView+Extensions.swift */; };
+		79B4E00C2ADBCAD50073D2B0 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4E0072ADBCAD50073D2B0 /* UIApplication+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,10 +94,7 @@
 		796567C72AD1E05E007EE6CB /* RomitaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RomitaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		796567CC2AD1E05E007EE6CB /* RomitaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomitaTests.swift; sourceTree = "<group>"; };
 		796567DC2AD1E507007EE6CB /* DynamicColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicColor.swift; sourceTree = "<group>"; };
-		796DF61E2AD2247000A18A4C /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
 		796DF6202AD226D400A18A4C /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		796DF6212AD2278000A18A4C /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
-		796DF6232AD2280000A18A4C /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		796DF6282AD236B200A18A4C /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 		79B4DFB82ADB744D0073D2B0 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		79B4DFBE2ADB7C2F0073D2B0 /* Demo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,11 +105,9 @@
 		79B4DFCC2ADB7C310073D2B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79B4DFCE2ADB7C310073D2B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79B4DFD22ADB7DB50073D2B0 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		79B4DFD42ADB7EC50073D2B0 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		79B4DFDC2ADB86550073D2B0 /* GradientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientViewController.swift; sourceTree = "<group>"; };
 		79B4DFDE2ADB8FDC0073D2B0 /* ROMColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ROMColor+Extensions.swift"; sourceTree = "<group>"; };
 		79B4DFE02ADB9F820073D2B0 /* ShakeAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeAnimationViewController.swift; sourceTree = "<group>"; };
-		79B4DFE22ADBA0F10073D2B0 /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
 		79B4DFE82ADBA9050073D2B0 /* Demo-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79B4DFEA2ADBA9060073D2B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79B4DFEC2ADBA9060073D2B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +115,11 @@
 		79B4DFF12ADBA9080073D2B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79B4DFF32ADBA9080073D2B0 /* Demo_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Demo_macOS.entitlements; sourceTree = "<group>"; };
 		79B4E0012ADBB3C80073D2B0 /* ROMView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ROMView+Extensions.swift"; sourceTree = "<group>"; };
+		79B4E0032ADBCAD40073D2B0 /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
+		79B4E0042ADBCAD50073D2B0 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		79B4E0052ADBCAD50073D2B0 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		79B4E0062ADBCAD50073D2B0 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		79B4E0072ADBCAD50073D2B0 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,8 +191,11 @@
 				79B4DFB82ADB744D0073D2B0 /* GradientView.swift */,
 				79B4DFDE2ADB8FDC0073D2B0 /* ROMColor+Extensions.swift */,
 				79B4E0012ADBB3C80073D2B0 /* ROMView+Extensions.swift */,
-				796DF61D2AD2245A00A18A4C /* iOS */,
-				79B4DFFE2ADBABEE0073D2B0 /* macOS */,
+				79B4E0072ADBCAD50073D2B0 /* UIApplication+Extensions.swift */,
+				79B4E0052ADBCAD50073D2B0 /* UICollectionView+Extensions.swift */,
+				79B4E0032ADBCAD40073D2B0 /* UIStackView+Extensions.swift */,
+				79B4E0042ADBCAD50073D2B0 /* UITableView+Extensions.swift */,
+				79B4E0062ADBCAD50073D2B0 /* UIView+Extensions.swift */,
 			);
 			path = Romita;
 			sourceTree = "<group>";
@@ -203,18 +206,6 @@
 				796567CC2AD1E05E007EE6CB /* RomitaTests.swift */,
 			);
 			path = RomitaTests;
-			sourceTree = "<group>";
-		};
-		796DF61D2AD2245A00A18A4C /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				796DF61E2AD2247000A18A4C /* UIApplication+Extensions.swift */,
-				796DF6212AD2278000A18A4C /* UICollectionView+Extensions.swift */,
-				79B4DFE22ADBA0F10073D2B0 /* UIStackView+Extensions.swift */,
-				79B4DFD42ADB7EC50073D2B0 /* UITableView+Extensions.swift */,
-				796DF6232AD2280000A18A4C /* UIView+Extensions.swift */,
-			);
-			path = iOS;
 			sourceTree = "<group>";
 		};
 		79B4DFBF2ADB7C2F0073D2B0 /* Demo-iOS */ = {
@@ -250,13 +241,6 @@
 				79B4DFF32ADBA9080073D2B0 /* Demo_macOS.entitlements */,
 			);
 			path = "Demo-macOS";
-			sourceTree = "<group>";
-		};
-		79B4DFFE2ADBABEE0073D2B0 /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = macOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,15 +425,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79B4DFE32ADBA0F10073D2B0 /* UIStackView+Extensions.swift in Sources */,
-				796DF61F2AD2247000A18A4C /* UIApplication+Extensions.swift in Sources */,
-				79B4DFD52ADB7EC50073D2B0 /* UITableView+Extensions.swift in Sources */,
+				79B4E00C2ADBCAD50073D2B0 /* UIApplication+Extensions.swift in Sources */,
 				796567DD2AD1E507007EE6CB /* DynamicColor.swift in Sources */,
+				79B4E0092ADBCAD50073D2B0 /* UITableView+Extensions.swift in Sources */,
 				79B4DFB92ADB744D0073D2B0 /* GradientView.swift in Sources */,
+				79B4E00B2ADBCAD50073D2B0 /* UIView+Extensions.swift in Sources */,
 				79B4DFDF2ADB8FDC0073D2B0 /* ROMColor+Extensions.swift in Sources */,
-				796DF6242AD2280000A18A4C /* UIView+Extensions.swift in Sources */,
+				79B4E00A2ADBCAD50073D2B0 /* UICollectionView+Extensions.swift in Sources */,
+				79B4E0082ADBCAD50073D2B0 /* UIStackView+Extensions.swift in Sources */,
 				796DF6292AD236B200A18A4C /* Types.swift in Sources */,
-				796DF6222AD2278000A18A4C /* UICollectionView+Extensions.swift in Sources */,
 				79B4E0022ADBB3C80073D2B0 /* ROMView+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

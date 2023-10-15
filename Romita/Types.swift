@@ -22,12 +22,16 @@ import Foundation
 import UIKit
 
 /**
- Typealis for color values on iOS/tvOS.
+ Typealias for color values on iOS/tvOS.
  */
 public typealias ROMColor = UIColor
-
+/**
+ Typealias for point values on iOS/tvOS.
+ */
 public typealias ROMPoint = CGPoint
-
+/**
+ Typealias for layout constraint priority values on iOS/tvOS.
+ */
 public typealias ROMLayoutConstraintPriority = UILayoutPriority
 /**
  Typealias for view values on iOS/tvOS.
@@ -42,8 +46,13 @@ import AppKit
  Typealias for color values on macOS.
  */
 public typealias ROMColor = NSColor
-
+/**
+ Typealias for point values on macOS.
+ */
 public typealias ROMPoint = NSPoint
+/**
+ Typealias for layout constraint priority values on macOS.
+ */
 public typealias ROMLayoutConstraintPriority = NSLayoutConstraint.Priority
 /**
  Typealias for view values on macOS.
