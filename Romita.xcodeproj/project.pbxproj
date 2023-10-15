@@ -16,6 +16,20 @@
 		796DF6242AD2280000A18A4C /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796DF6232AD2280000A18A4C /* UIView+Extensions.swift */; };
 		796DF6272AD22A6F00A18A4C /* Feige in Frameworks */ = {isa = PBXBuildFile; productRef = 796DF6262AD22A6F00A18A4C /* Feige */; };
 		796DF6292AD236B200A18A4C /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796DF6282AD236B200A18A4C /* Types.swift */; };
+		79B4DFB92ADB744D0073D2B0 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4DFB82ADB744D0073D2B0 /* GradientView.swift */; };
+		79B4DFC12ADB7C2F0073D2B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4DFC02ADB7C2F0073D2B0 /* AppDelegate.swift */; };
+		79B4DFC32ADB7C2F0073D2B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4DFC22ADB7C2F0073D2B0 /* SceneDelegate.swift */; };
+		79B4DFC52ADB7C2F0073D2B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4DFC42ADB7C2F0073D2B0 /* ViewController.swift */; };
+		79B4DFCA2ADB7C310073D2B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79B4DFC92ADB7C310073D2B0 /* Assets.xcassets */; };
+		79B4DFCD2ADB7C310073D2B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B4DFCB2ADB7C310073D2B0 /* LaunchScreen.storyboard */; };
+		79B4DFD32ADB7DB50073D2B0 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4DFD22ADB7DB50073D2B0 /* ViewModel.swift */; };
+		79B4DFD52ADB7EC50073D2B0 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4DFD42ADB7EC50073D2B0 /* UITableView+Extensions.swift */; };
+		79B4DFD72ADB81700073D2B0 /* Romita.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796567BF2AD1E05E007EE6CB /* Romita.framework */; };
+		79B4DFD82ADB81700073D2B0 /* Romita.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 796567BF2AD1E05E007EE6CB /* Romita.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		79B4DFDD2ADB86550073D2B0 /* GradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4DFDC2ADB86550073D2B0 /* GradientViewController.swift */; };
+		79B4DFDF2ADB8FDC0073D2B0 /* ROMColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4DFDE2ADB8FDC0073D2B0 /* ROMColor+Extensions.swift */; };
+		79B4DFE12ADB9F820073D2B0 /* ShakeAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4DFE02ADB9F820073D2B0 /* ShakeAnimationViewController.swift */; };
+		79B4DFE32ADBA0F10073D2B0 /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4DFE22ADBA0F10073D2B0 /* UIStackView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,7 +40,28 @@
 			remoteGlobalIDString = 796567BE2AD1E05E007EE6CB;
 			remoteInfo = Romita;
 		};
+		79B4DFD92ADB81700073D2B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 796567B62AD1E05E007EE6CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 796567BE2AD1E05E007EE6CB;
+			remoteInfo = Romita;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		79B4DFDB2ADB81700073D2B0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				79B4DFD82ADB81700073D2B0 /* Romita.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		796567BF2AD1E05E007EE6CB /* Romita.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Romita.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +74,20 @@
 		796DF6212AD2278000A18A4C /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
 		796DF6232AD2280000A18A4C /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		796DF6282AD236B200A18A4C /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		79B4DFB82ADB744D0073D2B0 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		79B4DFBE2ADB7C2F0073D2B0 /* Demo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79B4DFC02ADB7C2F0073D2B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		79B4DFC22ADB7C2F0073D2B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		79B4DFC42ADB7C2F0073D2B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		79B4DFC92ADB7C310073D2B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79B4DFCC2ADB7C310073D2B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		79B4DFCE2ADB7C310073D2B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79B4DFD22ADB7DB50073D2B0 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		79B4DFD42ADB7EC50073D2B0 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		79B4DFDC2ADB86550073D2B0 /* GradientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientViewController.swift; sourceTree = "<group>"; };
+		79B4DFDE2ADB8FDC0073D2B0 /* ROMColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ROMColor+Extensions.swift"; sourceTree = "<group>"; };
+		79B4DFE02ADB9F820073D2B0 /* ShakeAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeAnimationViewController.swift; sourceTree = "<group>"; };
+		79B4DFE22ADBA0F10073D2B0 /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +107,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		79B4DFBB2ADB7C2F0073D2B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79B4DFD72ADB81700073D2B0 /* Romita.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -67,7 +124,9 @@
 				796DF6202AD226D400A18A4C /* Package.swift */,
 				796567C12AD1E05E007EE6CB /* Romita */,
 				796567CB2AD1E05E007EE6CB /* RomitaTests */,
+				79B4DFBF2ADB7C2F0073D2B0 /* Demo-iOS */,
 				796567C02AD1E05E007EE6CB /* Products */,
+				79B4DFD62ADB81700073D2B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +135,7 @@
 			children = (
 				796567BF2AD1E05E007EE6CB /* Romita.framework */,
 				796567C72AD1E05E007EE6CB /* RomitaTests.xctest */,
+				79B4DFBE2ADB7C2F0073D2B0 /* Demo-iOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,6 +146,8 @@
 				796567C22AD1E05E007EE6CB /* Romita.h */,
 				796DF6282AD236B200A18A4C /* Types.swift */,
 				796567DC2AD1E507007EE6CB /* DynamicColor.swift */,
+				79B4DFB82ADB744D0073D2B0 /* GradientView.swift */,
+				79B4DFDE2ADB8FDC0073D2B0 /* ROMColor+Extensions.swift */,
 				796DF61D2AD2245A00A18A4C /* iOS */,
 			);
 			path = Romita;
@@ -104,9 +166,34 @@
 			children = (
 				796DF61E2AD2247000A18A4C /* UIApplication+Extensions.swift */,
 				796DF6212AD2278000A18A4C /* UICollectionView+Extensions.swift */,
+				79B4DFE22ADBA0F10073D2B0 /* UIStackView+Extensions.swift */,
+				79B4DFD42ADB7EC50073D2B0 /* UITableView+Extensions.swift */,
 				796DF6232AD2280000A18A4C /* UIView+Extensions.swift */,
 			);
 			path = iOS;
+			sourceTree = "<group>";
+		};
+		79B4DFBF2ADB7C2F0073D2B0 /* Demo-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				79B4DFC02ADB7C2F0073D2B0 /* AppDelegate.swift */,
+				79B4DFC22ADB7C2F0073D2B0 /* SceneDelegate.swift */,
+				79B4DFD22ADB7DB50073D2B0 /* ViewModel.swift */,
+				79B4DFC42ADB7C2F0073D2B0 /* ViewController.swift */,
+				79B4DFDC2ADB86550073D2B0 /* GradientViewController.swift */,
+				79B4DFE02ADB9F820073D2B0 /* ShakeAnimationViewController.swift */,
+				79B4DFC92ADB7C310073D2B0 /* Assets.xcassets */,
+				79B4DFCB2ADB7C310073D2B0 /* LaunchScreen.storyboard */,
+				79B4DFCE2ADB7C310073D2B0 /* Info.plist */,
+			);
+			path = "Demo-iOS";
+			sourceTree = "<group>";
+		};
+		79B4DFD62ADB81700073D2B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +249,25 @@
 			productReference = 796567C72AD1E05E007EE6CB /* RomitaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		79B4DFBD2ADB7C2F0073D2B0 /* Demo-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79B4DFCF2ADB7C310073D2B0 /* Build configuration list for PBXNativeTarget "Demo-iOS" */;
+			buildPhases = (
+				79B4DFBA2ADB7C2F0073D2B0 /* Sources */,
+				79B4DFBB2ADB7C2F0073D2B0 /* Frameworks */,
+				79B4DFBC2ADB7C2F0073D2B0 /* Resources */,
+				79B4DFDB2ADB81700073D2B0 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79B4DFDA2ADB81700073D2B0 /* PBXTargetDependency */,
+			);
+			name = "Demo-iOS";
+			productName = "Demo-iOS";
+			productReference = 79B4DFBE2ADB7C2F0073D2B0 /* Demo-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -179,6 +285,9 @@
 						LastSwiftMigration = 1500;
 					};
 					796567C62AD1E05E007EE6CB = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					79B4DFBD2ADB7C2F0073D2B0 = {
 						CreatedOnToolsVersion = 15.0;
 					};
 				};
@@ -201,6 +310,7 @@
 			targets = (
 				796567BE2AD1E05E007EE6CB /* Romita */,
 				796567C62AD1E05E007EE6CB /* RomitaTests */,
+				79B4DFBD2ADB7C2F0073D2B0 /* Demo-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -220,6 +330,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		79B4DFBC2ADB7C2F0073D2B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79B4DFCD2ADB7C310073D2B0 /* LaunchScreen.storyboard in Resources */,
+				79B4DFCA2ADB7C310073D2B0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -227,8 +346,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79B4DFE32ADBA0F10073D2B0 /* UIStackView+Extensions.swift in Sources */,
 				796DF61F2AD2247000A18A4C /* UIApplication+Extensions.swift in Sources */,
+				79B4DFD52ADB7EC50073D2B0 /* UITableView+Extensions.swift in Sources */,
 				796567DD2AD1E507007EE6CB /* DynamicColor.swift in Sources */,
+				79B4DFB92ADB744D0073D2B0 /* GradientView.swift in Sources */,
+				79B4DFDF2ADB8FDC0073D2B0 /* ROMColor+Extensions.swift in Sources */,
 				796DF6242AD2280000A18A4C /* UIView+Extensions.swift in Sources */,
 				796DF6292AD236B200A18A4C /* Types.swift in Sources */,
 				796DF6222AD2278000A18A4C /* UICollectionView+Extensions.swift in Sources */,
@@ -243,6 +366,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		79B4DFBA2ADB7C2F0073D2B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79B4DFE12ADB9F820073D2B0 /* ShakeAnimationViewController.swift in Sources */,
+				79B4DFC52ADB7C2F0073D2B0 /* ViewController.swift in Sources */,
+				79B4DFC12ADB7C2F0073D2B0 /* AppDelegate.swift in Sources */,
+				79B4DFDD2ADB86550073D2B0 /* GradientViewController.swift in Sources */,
+				79B4DFD32ADB7DB50073D2B0 /* ViewModel.swift in Sources */,
+				79B4DFC32ADB7C2F0073D2B0 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -251,7 +387,23 @@
 			target = 796567BE2AD1E05E007EE6CB /* Romita */;
 			targetProxy = 796567C92AD1E05E007EE6CB /* PBXContainerItemProxy */;
 		};
+		79B4DFDA2ADB81700073D2B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 796567BE2AD1E05E007EE6CB /* Romita */;
+			targetProxy = 79B4DFD92ADB81700073D2B0 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		79B4DFCB2ADB7C310073D2B0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79B4DFCC2ADB7C310073D2B0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		796567CF2AD1E05E007EE6CB /* Debug */ = {
@@ -501,6 +653,65 @@
 			};
 			name = Release;
 		};
+		79B4DFD02ADB7C310073D2B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 74KPPW2K35;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Demo-iOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kosoku.romita.Demo-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79B4DFD12ADB7C310073D2B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 74KPPW2K35;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Demo-iOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kosoku.romita.Demo-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -527,6 +738,15 @@
 			buildConfigurations = (
 				796567D52AD1E05E007EE6CB /* Debug */,
 				796567D62AD1E05E007EE6CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79B4DFCF2ADB7C310073D2B0 /* Build configuration list for PBXNativeTarget "Demo-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79B4DFD02ADB7C310073D2B0 /* Debug */,
+				79B4DFD12ADB7C310073D2B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

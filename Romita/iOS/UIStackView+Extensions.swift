@@ -1,8 +1,8 @@
 //
-//  Types.swift
+//  UIStackView+Extensions.swift
 //  Romita
 //
-//  Created by William Towe on 10/7/23.
+//  Created by William Towe on 10/15/23.
 //  Copyright © 2023 Kosoku Interactive, LLC. All rights reserved.
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,29 +21,12 @@ import Foundation
 #if os(iOS) || os(tvOS)
 import UIKit
 
-/**
- Typealis for color values on iOS/tvOS.
- */
-public typealias ROMColor = UIColor
-
-public typealias ROMPoint = CGPoint
-/**
- Typealias for view values on iOS/tvOS.
- */
-public typealias ROMView = UIView
-#elseif os(watchOS)
-import WatchKit
-#else
-import AppKit
-
-/**
- Typealias for color values on macOS.
- */
-public typealias ROMColor = NSColor
-
-public typealias ROMPoint = NSPoint
-/**
- Typealias for view values on macOS.
- */
-public typealias ROMView = NSView
+public extension UIStackView {
+    // MARK: - Public Functions
+    func addArrangedSubviews(_ subviews: [UIView]) {
+        subviews.forEach {
+            self.addArrangedSubview($0)
+        }
+    }
+}
 #endif
