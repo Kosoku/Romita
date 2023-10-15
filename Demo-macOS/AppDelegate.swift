@@ -1,6 +1,6 @@
 //
-//  UIStackView+Extensions.swift
-//  Romita
+//  AppDelegate.swift
+//  Demo-macOS
 //
 //  Created by William Towe on 10/15/23.
 //  Copyright © 2023 Kosoku Interactive, LLC. All rights reserved.
@@ -17,21 +17,26 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-import Foundation
-#if os(iOS) || os(tvOS)
-import UIKit
+import Cocoa
 
-public extension UIStackView {
-    // MARK: - Public Functions
-    /**
-     Adds the provided `subviews` as arranged subviews of the receiver.
-     
-     - Parameter subviews: The subviews to add as arranged subviews
-     */
-    func addArrangedSubviews(_ subviews: [UIView]) {
-        subviews.forEach {
-            self.addArrangedSubview($0)
-        }
+@main
+class AppDelegate: NSObject, NSApplicationDelegate {
+
+    
+
+
+    func applicationDidFinishLaunching(_ aNotification: Notification) {
+        // Insert code here to initialize your application
     }
+
+    func applicationWillTerminate(_ aNotification: Notification) {
+        // Insert code here to tear down your application
+    }
+
+    func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
+        return true
+    }
+
+
 }
-#endif
+

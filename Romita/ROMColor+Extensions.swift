@@ -27,11 +27,24 @@ import AppKit
 #if os(iOS) || os(tvOS) || os(macOS)
 public extension ROMColor {
     // MARK: - Public Types
+    /**
+     Represents a supported color space for random color generation.
+     */
     enum ColorSpace {
+        /**
+         The gray color space.
+         */
         case gray
+        /**
+         The HSB (*Hue Saturation Brightness*) color space.
+         */
         case hsb
+        /**
+         The RGB (*Red Green Blue*) color space.
+         */
         case rgb
         
+        // MARK: - Internal Properties
         internal var max: Int {
             switch self {
             case .gray, .rgb:
@@ -40,10 +53,27 @@ public extension ROMColor {
                 return 240
             }
         }
+        
+        // MARK: - Public Functions
+        /**
+         Returns the default color space.
+         
+         - Returns: The default color space
+         */
+        public static func `default`() -> ColorSpace {
+            .rgb
+        }
     }
     
     // MARK: - Public Functions
-    static func random(inColorSpace colorSpace: ColorSpace, alpha: CGFloat? = nil) -> ROMColor {
+    /**
+     Returns a random color created in the provided `colorSpace` and `alpha` value.
+     
+     - Parameter colorSpace: The color space to create the random color in, the default is `ColorSpace.default()`
+     - Parameter alpha: The alpha value for the random color, nil means a random value in the range of `0.0 <= 1.0`
+     - Returns: The random color
+     */
+    static func random(inColorSpace colorSpace: ColorSpace = .default(), alpha: CGFloat? = nil) -> ROMColor {
         let alpha = alpha ?? CGFloat.random(in: 0.0...1.0)
         
         switch colorSpace {

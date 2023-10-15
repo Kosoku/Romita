@@ -26,68 +26,106 @@ import AppKit
 #endif
 
 #if os(iOS) || os(tvOS) || os(macOS)
+/**
+ View backed by a `CAGradientLayer`.
+ */
 open class GradientView: ROMView {
     // MARK: - Public Properties
+    /**
+     Get/set the colors that are used by the underlying `CAGradientLayer`.
+     */
     open var colors: [ROMColor] {
         get {
-            ((self.layer.colors as? [CGColor])?.map {
+            ((self.gradientLayer.colors as? [CGColor])?.compactMap {
                 ROMColor(cgColor: $0)
             }).valueOrEmpty
         }
         set {
-            self.layer.colors = newValue.map {
+            self.gradientLayer.colors = newValue.map {
                 $0.cgColor
             }
         }
     }
     
+    /**
+     Get/set the locations that used as the gradient stops by the underlying `CAGradientLayer`.
+     
+     - Warning: The locations must be in the range of `0.0 <= 1.0` **AND** monotonically increasing
+     */
     open var locations: [Float] {
         get {
-            (self.layer.locations?.map {
+            (self.gradientLayer.locations?.map {
                 $0.floatValue
             }).valueOrEmpty
         }
         set {
-            self.layer.locations = newValue.nilIfEmpty?.map {
+            self.gradientLayer.locations = newValue.nilIfEmpty?.map {
                 NSNumber(value: $0)
             }
         }
     }
     
+    /**
+     Get/set the start point of the underlying `CAGradientLayer`.
+     
+     - Warning: The point is defined in the unit coordinate space
+     */
     open var startPoint: ROMPoint {
         get {
             #if os(macOS)
-            NSPointFromCGPoint(self.layer.startPoint)
+            NSPointFromCGPoint(self.gradientLayer.startPoint)
             #else
-            self.layer.startPoint
+            self.gradientLayer.startPoint
             #endif
         }
         set {
             #if os(macOS)
-            self.layer.startPoint = NSPointToCGPoint(newValue)
+            self.gradientLayer.startPoint = NSPointToCGPoint(newValue)
             #else
-            self.layer.startPoint = newValue
+            self.gradientLayer.startPoint = newValue
             #endif
         }
     }
     
+    /**
+     Get/set the end point of the underlying `CAGradientLayer`.
+     
+     - Warning: The point is defined in the unit coordinate space
+     */
     open var endPoint: ROMPoint {
         get {
             #if os(macOS)
-            NSPointFromCGPoint(self.layer.startPoint)
+            NSPointFromCGPoint(self.gradientLayer.endPoint)
             #else
-            self.layer.startPoint
+            self.gradientLayer.endPoint
             #endif
         }
         set {
             #if os(macOS)
-            self.layer.startPoint = NSPointToCGPoint(newValue)
+            self.gradientLayer.endPoint = NSPointToCGPoint(newValue)
             #else
-            self.layer.startPoint = newValue
+            self.gradientLayer.endPoint = newValue
             #endif
         }
     }
     
+    // MARK: - Override Properties
+    #if os(iOS) || os(tvOS)
+    @_documentation(visibility: internal)
+    open override class var layerClass: AnyClass {
+        CAGradientLayer.self
+    }
+    #endif
+    
+    // MARK: - Private Properties
+    private var gradientLayer: CAGradientLayer {
+        self.layer as! CAGradientLayer
+    }
+    
+    // MARK: - Public Functions
+    /**
+     Performs common setup during initialization.
+     */
     open func setup() {
         #if os(macOS)
         self.wantsLayer = true
@@ -97,20 +135,15 @@ open class GradientView: ROMView {
         #endif
     }
     
-    open override class var layerClass: AnyClass {
-        CAGradientLayer.self
-    }
-    
-    open override var layer: CAGradientLayer {
-        super.layer as! CAGradientLayer
-    }
-    
+    // MARK: - Initializers
+    @_documentation(visibility: internal)
     public override init(frame: CGRect) {
         super.init(frame: frame)
         
         self.setup()
     }
     
+    @_documentation(visibility: internal)
     public required init?(coder: NSCoder) {
         super.init(coder: coder)
         

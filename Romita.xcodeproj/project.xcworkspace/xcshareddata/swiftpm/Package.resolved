@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Kosoku/Feige",
       "state" : {
-        "revision" : "500f63b760625a14607c9db52aa4ff8fdaa010dd",
-        "version" : "1.3.0"
+        "revision" : "7934b25bf18bc65e0cca0240a8bb8ef1858d4312",
+        "version" : "2.0.1"
       }
     }
   ],

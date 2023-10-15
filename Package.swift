@@ -30,7 +30,7 @@ let package = Package(
     ],
     dependencies: [
         // other dependencies
-        .package(url: "https://github.com/Kosoku/Feige", from: "1.3.0"),
+        .package(url: "https://github.com/Kosoku/Feige", from: "2.0.1"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.

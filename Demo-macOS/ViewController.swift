@@ -1,8 +1,8 @@
 //
-//  GradientViewController.swift
-//  Demo-iOS
+//  ViewController.swift
+//  Demo-macOS
 //
-//  Created by William Towe on 10/14/23.
+//  Created by William Towe on 10/15/23.
 //  Copyright © 2023 Kosoku Interactive, LLC. All rights reserved.
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,11 +17,11 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-import Foundation
+import Cocoa
+import Feige
 import Romita
-import UIKit
 
-final class GradientViewController: UIViewController {
+class ViewController: NSViewController {
     // MARK: - Private Properties
     private let gradientView = GradientView()
         .setTranslatesAutoresizingMaskIntoConstraints()
@@ -35,10 +35,9 @@ final class GradientViewController: UIViewController {
     // MARK: - Override Functions
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.title = ViewModel.Item.gradientView.title
-        self.view.backgroundColor = .systemBackground
+
         self.view.addSubview(self.gradientView)
-        self.gradientView.pinToSuperviewEdges(safeAreaLayoutGuideEdges: .all, edgeInsets: .zero)
+        self.gradientView.pinToSuperviewEdges()
     }
 }
+

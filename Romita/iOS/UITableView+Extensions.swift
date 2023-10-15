@@ -23,14 +23,33 @@ import UIKit
 
 public extension UITableView {
     // MARK: - Public Functions
+    /**
+     Registers the provided cell `class` for reuse.
+     
+     - Parameter class: The cell class to register
+     - SeeAlso: `UITableView.dequeueReusableCellClass(_:for:)`
+     */
     func registerCellClass<T: UITableViewCell>(_ class: T.Type) {
         self.register(T.self, forCellReuseIdentifier: T.defaultReuseIdentifier)
     }
     
+    /**
+     Registers the provided header footer view `class` for reuse.
+     
+     - Parameter class: The header footer view class to register
+     - SeeAlso: `UITableView.dequeueReusableHeaderFooterViewClass(_:)`
+     */
     func registerHeaderFooterViewClass<T: UITableViewHeaderFooterView>(_ class: T.Type) {
         self.register(T.self, forHeaderFooterViewReuseIdentifier: T.defaultReuseIdentifier)
     }
     
+    /**
+     Dequeues a reusable cell of the provided `class`.
+     
+     - Parameter class: The cell class to dequeue
+     - Parameter indexPath: The provided index path
+     - Returns: The reusable cell
+     */
     func dequeueReusableCellClass<T: UITableViewCell>(_ class: T.Type, for indexPath: IndexPath) -> T {
         guard let retval = self.dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier, for: indexPath) as? T else {
             fatalError("Unable to dequeue cell with identifier \(T.defaultReuseIdentifier)")
@@ -38,6 +57,12 @@ public extension UITableView {
         return retval
     }
     
+    /**
+     Dequeues a reusable header footer view of the provided `class`.
+     
+     - Parameter class: The header footer view class to dequeue
+     - Returns: The reusable header footer view
+     */
     func dequeueReusableHeaderFooterViewClass<T: UITableViewHeaderFooterView>(_ class: T.Type) -> T {
         guard let retval = self.dequeueReusableHeaderFooterView(withIdentifier: T.defaultReuseIdentifier) as? T else {
             fatalError("Unable to dequeue header footer view with identifier \(T.defaultReuseIdentifier)")

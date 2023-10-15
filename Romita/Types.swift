@@ -27,6 +27,8 @@ import UIKit
 public typealias ROMColor = UIColor
 
 public typealias ROMPoint = CGPoint
+
+public typealias ROMLayoutConstraintPriority = UILayoutPriority
 /**
  Typealias for view values on iOS/tvOS.
  */
@@ -42,6 +44,7 @@ import AppKit
 public typealias ROMColor = NSColor
 
 public typealias ROMPoint = NSPoint
+public typealias ROMLayoutConstraintPriority = NSLayoutConstraint.Priority
 /**
  Typealias for view values on macOS.
  */
