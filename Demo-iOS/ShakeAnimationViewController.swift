@@ -49,17 +49,16 @@ final class ShakeAnimationViewController: UIViewController {
         self.view.backgroundColor = .systemBackground
         self.view.addSubview(self.stackView.also {
             $0.addArrangedSubviews([self.textField, self.button.also {
-                $0.addTarget(self, action: #selector(buttonAction(sender:)), for: .touchUpInside)
+                $0.addBlock { [weak self] _, _ in
+                    guard let self else {
+                        return
+                    }
+                    self.textField.startShakeAnimation()
+                }
             }])
             
             self.textField.pinToSuperviewEdges([.leading, .trailing], edgeInsets: .zero)
         })
         self.stackView.pinToSuperviewEdges([.leading, .trailing], safeAreaLayoutGuideEdges: .top)
-    }
-    
-    // MARK: - Private Functions
-    @objc
-    private func buttonAction(sender: UIButton) {
-        self.textField.startShakeAnimation()
     }
 }

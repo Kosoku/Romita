@@ -37,6 +37,7 @@
 		79B4E00A2ADBCAD50073D2B0 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4E0052ADBCAD50073D2B0 /* UICollectionView+Extensions.swift */; };
 		79B4E00B2ADBCAD50073D2B0 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4E0062ADBCAD50073D2B0 /* UIView+Extensions.swift */; };
 		79B4E00C2ADBCAD50073D2B0 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4E0072ADBCAD50073D2B0 /* UIApplication+Extensions.swift */; };
+		79F8EB5F2AE1B10B00F438BF /* UIControl+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F8EB5E2AE1B10B00F438BF /* UIControl+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +121,7 @@
 		79B4E0052ADBCAD50073D2B0 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
 		79B4E0062ADBCAD50073D2B0 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		79B4E0072ADBCAD50073D2B0 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		79F8EB5E2AE1B10B00F438BF /* UIControl+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 				79B4E0012ADBB3C80073D2B0 /* ROMView+Extensions.swift */,
 				79B4E0072ADBCAD50073D2B0 /* UIApplication+Extensions.swift */,
 				79B4E0052ADBCAD50073D2B0 /* UICollectionView+Extensions.swift */,
+				79F8EB5E2AE1B10B00F438BF /* UIControl+Extensions.swift */,
 				79B4E0032ADBCAD40073D2B0 /* UIStackView+Extensions.swift */,
 				79B4E0042ADBCAD50073D2B0 /* UITableView+Extensions.swift */,
 				79B4E0062ADBCAD50073D2B0 /* UIView+Extensions.swift */,
@@ -432,6 +435,7 @@
 				79B4E00B2ADBCAD50073D2B0 /* UIView+Extensions.swift in Sources */,
 				79B4DFDF2ADB8FDC0073D2B0 /* ROMColor+Extensions.swift in Sources */,
 				79B4E00A2ADBCAD50073D2B0 /* UICollectionView+Extensions.swift in Sources */,
+				79F8EB5F2AE1B10B00F438BF /* UIControl+Extensions.swift in Sources */,
 				79B4E0082ADBCAD50073D2B0 /* UIStackView+Extensions.swift in Sources */,
 				796DF6292AD236B200A18A4C /* Types.swift in Sources */,
 				79B4E0022ADBB3C80073D2B0 /* ROMView+Extensions.swift in Sources */,

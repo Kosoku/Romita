@@ -1,0 +1,26 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+$module_scheme_name = "Romita"
+
+ENV["SCHEME_NAME"] = $module_scheme_name
+ENV["MODULE_NAME"] = $module_scheme_name
+ENV["INFO_PLIST_PATH"] = "Romita/Info.plist"
+ENV["PODSPEC_PATH"] = "Romita.podspec"
+ENV["XCODEPROJ_PATH"] = "Romita.xcodeproj"
+
+import("../Overseer/fastlane/Fastfile")
+
+default_platform(:ios)
