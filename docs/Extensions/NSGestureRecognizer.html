@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>UICollectionView Extension Reference</title>
+    <title>NSGestureRecognizer Extension Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Extension/UICollectionView" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Extension/NSGestureRecognizer" class="dashAnchor"></a>
 
-    <a title="UICollectionView Extension Reference"></a>
+    <a title="NSGestureRecognizer Extension Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -50,7 +50,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html">Romita Reference</a>
       <img class="carat" src="../img/carat.png" alt=""/>
-      UICollectionView Extension Reference
+      NSGestureRecognizer Extension Reference
     </p>
 
     <div class="content-wrapper">
@@ -161,7 +161,14 @@
 
         <section class="section">
           <div class="section-content top-matter">
-            <h1>UICollectionView</h1>
+            <h1>NSGestureRecognizer</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">extension</span> <span class="kt">NSGestureRecognizer</span></code></pre>
+
+                </div>
+              </div>
             
           </div>
         </section>
@@ -170,11 +177,11 @@
           <div class="section-content">
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Public%20Functions"></a>
-                <a name="//apple_ref/swift/Section/Public Functions" class="dashAnchor"></a>
+                <a name="/Public%20Types"></a>
+                <a name="//apple_ref/swift/Section/Public Types" class="dashAnchor"></a>
                 <div class="section-name-container">
-                  <a class="section-name-link" href="#/Public%20Functions"></a>
-                  <h3 class="section-name"><span>Public Functions</span>
+                  <a class="section-name-link" href="#/Public%20Types"></a>
+                  <h3 class="section-name"><span>Public Types</span>
 </h3>
                 </div>
               </div>
@@ -182,9 +189,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Method/registerCellClass(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">registerCellClass(_:<wbr>)</a>
+                    <a name="/s:So19NSGestureRecognizerC6RomitaE5Blocka"></a>
+                    <a name="//apple_ref/swift/Alias/Block" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So19NSGestureRecognizerC6RomitaE5Blocka">Block</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -192,70 +199,61 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Registers the provided cell <code>class</code> for reuse.</p>
-<div class="aside aside-see-also">
-    <p class="aside-title">See also</p>
-    <code><a href="../Extensions/UICollectionView.html#/dequeueReusableCellClass(_:for:)">UICollectionView.dequeueReusableCellClass(_:for:)</a></code>
+                        <p>Block that will be invoked when a gesture recognizer is triggered.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt">NSGestureRecognizer</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Public Properties" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Public%20Properties"></a>
+                  <h3 class="section-name"><span>Public Properties</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So19NSGestureRecognizerC6RomitaE5blockyABcSgvp"></a>
+                    <a name="//apple_ref/swift/Property/block" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So19NSGestureRecognizerC6RomitaE5blockyABcSgvp">block</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set/get the block associated with the receiver.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    Setting this to <code>nil</code> will clear the receiver&rsquo;s <code>target</code> and <code>action</code>. Seting is to a non-nil value will overwrite the receiver&rsquo;s <code>target</code> and <code>action</code> values
 
 </div>
 
                       </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Method/registerSupplementaryViewClass(_:kind:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">registerSupplementaryViewClass(_:<wbr>kind:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Registers the provided supplementary view <code>class</code> for reuse.</p>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">block</span><span class="p">:</span> <span class="kt"><a href="../Extensions/NSGestureRecognizer.html#/s:So19NSGestureRecognizerC6RomitaE5Blocka">Block</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Method/dequeueReusableCellClass(_:for:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">dequeueReusableCellClass(_:<wbr>for:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Dequeues a reusable cell of the provided <code>class</code>.</p>
-
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Method/dequeueReusableSupplementaryViewClass(_:kind:for:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">dequeueReusableSupplementaryViewClass(_:<wbr>kind:<wbr>for:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Dequeues a reusable supplementary view of the provided <code>class</code>.</p>
-
+                        </div>
                       </div>
                     </section>
                   </div>

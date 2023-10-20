@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>UICollectionView Extension Reference</title>
+    <title>UIViewController Extension Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Extension/UICollectionView" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Extension/UIViewController" class="dashAnchor"></a>
 
-    <a title="UICollectionView Extension Reference"></a>
+    <a title="UIViewController Extension Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -50,7 +50,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html">Romita Reference</a>
       <img class="carat" src="../img/carat.png" alt=""/>
-      UICollectionView Extension Reference
+      UIViewController Extension Reference
     </p>
 
     <div class="content-wrapper">
@@ -161,7 +161,7 @@
 
         <section class="section">
           <div class="section-content top-matter">
-            <h1>UICollectionView</h1>
+            <h1>UIViewController</h1>
             
           </div>
         </section>
@@ -170,11 +170,11 @@
           <div class="section-content">
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Public%20Functions"></a>
-                <a name="//apple_ref/swift/Section/Public Functions" class="dashAnchor"></a>
+                <a name="/Public%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Public Properties" class="dashAnchor"></a>
                 <div class="section-name-container">
-                  <a class="section-name-link" href="#/Public%20Functions"></a>
-                  <h3 class="section-name"><span>Public Functions</span>
+                  <a class="section-name-link" href="#/Public%20Properties"></a>
+                  <h3 class="section-name"><span>Public Properties</span>
 </h3>
                 </div>
               </div>
@@ -183,8 +183,8 @@
                   <div>
                     <code>
                     <a name="/"></a>
-                    <a name="//apple_ref/swift/Method/registerCellClass(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">registerCellClass(_:<wbr>)</a>
+                    <a name="//apple_ref/swift/Variable/viewControllerForPresenting" class="dashAnchor"></a>
+                    <a class="token" href="#/">viewControllerForPresenting</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -192,12 +192,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Registers the provided cell <code>class</code> for reuse.</p>
-<div class="aside aside-see-also">
-    <p class="aside-title">See also</p>
-    <code><a href="../Extensions/UICollectionView.html#/dequeueReusableCellClass(_:for:)">UICollectionView.dequeueReusableCellClass(_:for:)</a></code>
-
-</div>
+                        <p>Returns the view controller that should be used when calling <code>UIViewController.present(_:animated:)</code>, starting from the first window scene&rsquo;s key window&rsquo;s root view controller.</p>
 
                       </div>
                     </section>
@@ -207,8 +202,8 @@
                   <div>
                     <code>
                     <a name="/"></a>
-                    <a name="//apple_ref/swift/Method/registerSupplementaryViewClass(_:kind:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">registerSupplementaryViewClass(_:<wbr>kind:<wbr>)</a>
+                    <a name="//apple_ref/swift/Property/viewControllerForPresenting" class="dashAnchor"></a>
+                    <a class="token" href="#/">viewControllerForPresenting</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -216,45 +211,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Registers the provided supplementary view <code>class</code> for reuse.</p>
-
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Method/dequeueReusableCellClass(_:for:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">dequeueReusableCellClass(_:<wbr>for:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Dequeues a reusable cell of the provided <code>class</code>.</p>
-
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Method/dequeueReusableSupplementaryViewClass(_:kind:for:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">dequeueReusableSupplementaryViewClass(_:<wbr>kind:<wbr>for:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Dequeues a reusable supplementary view of the provided <code>class</code>.</p>
+                        <p>Returns the view controller that should be used when calling <code>UIViewController.present(_:animated:)</code>.</p>
 
                       </div>
                     </section>

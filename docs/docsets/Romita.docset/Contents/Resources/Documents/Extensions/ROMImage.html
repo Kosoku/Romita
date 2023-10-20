@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>UICollectionView Extension Reference</title>
+    <title>ROMImage Extension Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Extension/UICollectionView" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Extension/ROMImage" class="dashAnchor"></a>
 
-    <a title="UICollectionView Extension Reference"></a>
+    <a title="ROMImage Extension Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -50,7 +50,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html">Romita Reference</a>
       <img class="carat" src="../img/carat.png" alt=""/>
-      UICollectionView Extension Reference
+      ROMImage Extension Reference
     </p>
 
     <div class="content-wrapper">
@@ -161,7 +161,14 @@
 
         <section class="section">
           <div class="section-content top-matter">
-            <h1>UICollectionView</h1>
+            <h1>ROMImage</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">extension</span> <span class="kt"><a href="../Typealiases.html#/s:6Romita8ROMImagea">ROMImage</a></span></code></pre>
+
+                </div>
+              </div>
             
           </div>
         </section>
@@ -182,9 +189,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Method/registerCellClass(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">registerCellClass(_:<wbr>)</a>
+                    <a name="/s:So7NSImageC6RomitaE8originalAByF"></a>
+                    <a name="//apple_ref/swift/Method/original()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So7NSImageC6RomitaE8originalAByF">original()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -192,13 +199,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Registers the provided cell <code>class</code> for reuse.</p>
-<div class="aside aside-see-also">
-    <p class="aside-title">See also</p>
-    <code><a href="../Extensions/UICollectionView.html#/dequeueReusableCellClass(_:for:)">UICollectionView.dequeueReusableCellClass(_:for:)</a></code>
+                        <p>Returns a new image that will <strong>never</strong> act as a template.</p>
 
-</div>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">original</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:6Romita8ROMImagea">ROMImage</a></span></code></pre>
 
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -206,9 +216,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Method/registerSupplementaryViewClass(_:kind:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">registerSupplementaryViewClass(_:<wbr>kind:<wbr>)</a>
+                    <a name="/s:So7NSImageC6RomitaE8templateAByF"></a>
+                    <a name="//apple_ref/swift/Method/template()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So7NSImageC6RomitaE8templateAByF">template()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -216,46 +226,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Registers the provided supplementary view <code>class</code> for reuse.</p>
+                        <p>Returns a new image that will <strong>always</strong> act as a template.</p>
 
                       </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Method/dequeueReusableCellClass(_:for:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">dequeueReusableCellClass(_:<wbr>for:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Dequeues a reusable cell of the provided <code>class</code>.</p>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">template</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:6Romita8ROMImagea">ROMImage</a></span></code></pre>
 
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Method/dequeueReusableSupplementaryViewClass(_:kind:for:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">dequeueReusableSupplementaryViewClass(_:<wbr>kind:<wbr>for:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Dequeues a reusable supplementary view of the provided <code>class</code>.</p>
-
+                        </div>
                       </div>
                     </section>
                   </div>

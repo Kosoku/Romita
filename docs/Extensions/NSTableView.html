@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>UICollectionView Extension Reference</title>
+    <title>NSTableView Extension Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Extension/UICollectionView" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Extension/NSTableView" class="dashAnchor"></a>
 
-    <a title="UICollectionView Extension Reference"></a>
+    <a title="NSTableView Extension Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -50,7 +50,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html">Romita Reference</a>
       <img class="carat" src="../img/carat.png" alt=""/>
-      UICollectionView Extension Reference
+      NSTableView Extension Reference
     </p>
 
     <div class="content-wrapper">
@@ -161,7 +161,14 @@
 
         <section class="section">
           <div class="section-content top-matter">
-            <h1>UICollectionView</h1>
+            <h1>NSTableView</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">extension</span> <span class="kt">NSTableView</span></code></pre>
+
+                </div>
+              </div>
             
           </div>
         </section>
@@ -182,9 +189,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Method/registerCellClass(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">registerCellClass(_:<wbr>)</a>
+                    <a name="/s:So11NSTableViewC6RomitaE04makeB5Class_14forTableColumn5ownerxxm_So0aH0CSgypSgtSo6NSViewCRbzlF"></a>
+                    <a name="//apple_ref/swift/Method/makeViewClass(_:forTableColumn:owner:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So11NSTableViewC6RomitaE04makeB5Class_14forTableColumn5ownerxxm_So0aH0CSgypSgtSo6NSViewCRbzlF">makeViewClass(_:<wbr>forTableColumn:<wbr>owner:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -192,13 +199,63 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Registers the provided cell <code>class</code> for reuse.</p>
-<div class="aside aside-see-also">
-    <p class="aside-title">See also</p>
-    <code><a href="../Extensions/UICollectionView.html#/dequeueReusableCellClass(_:for:)">UICollectionView.dequeueReusableCellClass(_:for:)</a></code>
+                        <p>Returns a view of class <code>class</code> for <code>tableColumn</code> and <code>owner</code>.</p>
 
-</div>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">makeViewClass</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">class</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="n">forTableColumn</span> <span class="nv">tableColumn</span><span class="p">:</span> <span class="kt">NSTableColumn</span><span class="p">?,</span> <span class="nv">owner</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">NSView</span></code></pre>
 
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>class</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view class to make</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tableColumn</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The related table column</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>owner</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The owner object</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The view instance</p>
                       </div>
                     </section>
                   </div>
@@ -206,9 +263,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Method/registerSupplementaryViewClass(_:kind:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">registerSupplementaryViewClass(_:<wbr>kind:<wbr>)</a>
+                    <a name="/s:So11NSTableViewC6RomitaE04makeB5Class_14withIdentifier5ownerxxm_So019NSUserInterfaceItemG0aypSgtSo6NSViewCRbzlF"></a>
+                    <a name="//apple_ref/swift/Method/makeViewClass(_:withIdentifier:owner:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So11NSTableViewC6RomitaE04makeB5Class_14withIdentifier5ownerxxm_So019NSUserInterfaceItemG0aypSgtSo6NSViewCRbzlF">makeViewClass(_:<wbr>withIdentifier:<wbr>owner:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -216,46 +273,63 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Registers the provided supplementary view <code>class</code> for reuse.</p>
+                        <p>Returns a view of class <code>class</code> with <code>identifier</code> and <code>owner</code>.</p>
 
                       </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Method/dequeueReusableCellClass(_:for:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">dequeueReusableCellClass(_:<wbr>for:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Dequeues a reusable cell of the provided <code>class</code>.</p>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">makeViewClass</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">class</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="n">withIdentifier</span> <span class="nv">identifier</span><span class="p">:</span> <span class="kt">NSUserInterfaceItemIdentifier</span> <span class="o">=</span> <span class="o">.</span><span class="nf">init</span><span class="p">(</span><span class="kt">T</span><span class="o">.</span><span class="n">defaultReuseIdentifier</span><span class="p">),</span> <span class="nv">owner</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">NSView</span></code></pre>
 
+                        </div>
                       </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Method/dequeueReusableSupplementaryViewClass(_:kind:for:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">dequeueReusableSupplementaryViewClass(_:<wbr>kind:<wbr>for:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Dequeues a reusable supplementary view of the provided <code>class</code>.</p>
-
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>class</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view class to make</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>identifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view identifier</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>owner</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The owner object</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The view instance</p>
                       </div>
                     </section>
                   </div>

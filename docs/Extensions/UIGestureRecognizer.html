@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>UICollectionView Extension Reference</title>
+    <title>UIGestureRecognizer Extension Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Extension/UICollectionView" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Extension/UIGestureRecognizer" class="dashAnchor"></a>
 
-    <a title="UICollectionView Extension Reference"></a>
+    <a title="UIGestureRecognizer Extension Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -50,7 +50,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html">Romita Reference</a>
       <img class="carat" src="../img/carat.png" alt=""/>
-      UICollectionView Extension Reference
+      UIGestureRecognizer Extension Reference
     </p>
 
     <div class="content-wrapper">
@@ -161,13 +161,77 @@
 
         <section class="section">
           <div class="section-content top-matter">
-            <h1>UICollectionView</h1>
+            <h1>UIGestureRecognizer</h1>
             
           </div>
         </section>
 
         <section class="section">
           <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Types"></a>
+                <a name="//apple_ref/swift/Section/Public Types" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Public%20Types"></a>
+                  <h3 class="section-name"><span>Public Types</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Alias/Block" class="dashAnchor"></a>
+                    <a class="token" href="#/">Block</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Block that is invoked when the gesture recognizer is triggered.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Public Properties" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Public%20Properties"></a>
+                  <h3 class="section-name"><span>Public Properties</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Property/hasBlocks" class="dashAnchor"></a>
+                    <a class="token" href="#/">hasBlocks</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns whether the receiver has any blocks associated with it.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
             <div class="task-group">
               <div class="task-name-container">
                 <a name="/Public%20Functions"></a>
@@ -183,8 +247,8 @@
                   <div>
                     <code>
                     <a name="/"></a>
-                    <a name="//apple_ref/swift/Method/registerCellClass(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">registerCellClass(_:<wbr>)</a>
+                    <a name="//apple_ref/swift/Method/addBlock(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/">addBlock(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -192,12 +256,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Registers the provided cell <code>class</code> for reuse.</p>
-<div class="aside aside-see-also">
-    <p class="aside-title">See also</p>
-    <code><a href="../Extensions/UICollectionView.html#/dequeueReusableCellClass(_:for:)">UICollectionView.dequeueReusableCellClass(_:for:)</a></code>
-
-</div>
+                        <p>Adds the provided <code>block</code> to set of blocks that are invoked when the receiver is triggered.</p>
 
                       </div>
                     </section>
@@ -207,8 +266,8 @@
                   <div>
                     <code>
                     <a name="/"></a>
-                    <a name="//apple_ref/swift/Method/registerSupplementaryViewClass(_:kind:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">registerSupplementaryViewClass(_:<wbr>kind:<wbr>)</a>
+                    <a name="//apple_ref/swift/Method/removeAllBlocks()" class="dashAnchor"></a>
+                    <a class="token" href="#/">removeAllBlocks()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -216,45 +275,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Registers the provided supplementary view <code>class</code> for reuse.</p>
-
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Method/dequeueReusableCellClass(_:for:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">dequeueReusableCellClass(_:<wbr>for:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Dequeues a reusable cell of the provided <code>class</code>.</p>
-
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Method/dequeueReusableSupplementaryViewClass(_:kind:for:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">dequeueReusableSupplementaryViewClass(_:<wbr>kind:<wbr>for:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Dequeues a reusable supplementary view of the provided <code>class</code>.</p>
+                        <p>Removes all blocks associated with the receiver.</p>
 
                       </div>
                     </section>
