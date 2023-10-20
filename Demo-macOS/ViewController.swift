@@ -18,26 +18,56 @@
 //  limitations under the License.
 
 import Cocoa
+import Combine
 import Feige
 import Romita
 
-class ViewController: NSViewController {
+class ViewController: NSViewController, NSTableViewDelegate {
+    // MARK: - Private Types
+    private typealias DiffableDataSource = NSTableViewDiffableDataSource<ViewModel.Section, ViewModel.Item>
+    
     // MARK: - Private Properties
-    private let gradientView = GradientView()
-        .setTranslatesAutoresizingMaskIntoConstraints()
-        .also {
-            $0.colors = [
-                .random(),
-                .random()
-            ]
+    @IBOutlet
+    private weak var tableView: NSTableView?
+    
+    private lazy var diffableDataSource: DiffableDataSource = { [unowned self] in
+        DiffableDataSource(tableView: self.tableView!) { tableView, tableColumn, row, item in
+            tableView.makeViewClass(NSTableCellView.self, forTableColumn: tableColumn)
+                .also {
+                    $0.textField?.stringValue = item.title
+                }
         }
+    }()
+    
+    private let viewModel = ViewModel()
+    private var cancellables = Set<AnyCancellable>()
     
     // MARK: - Override Functions
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.addSubview(self.gradientView)
-        self.gradientView.pinToSuperviewEdges()
+        self.tableView?.dataSource = self.diffableDataSource
+        self.tableView?.delegate = self
+        
+        self.viewModel.$snapshot
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] in
+                guard let self else {
+                    return
+                }
+                self.diffableDataSource.apply($0, animatingDifferences: true)
+            }
+            .store(in: &self.cancellables)
+    }
+    
+    // MARK: - NSTableViewDelegate
+    func tableViewSelectionDidChange(_ notification: Notification) {
+        guard let row = self.tableView?.selectedRow, let item = self.diffableDataSource.itemIdentifier(forRow: row) else {
+            return
+        }
+        if let viewController = item.viewControllerForPresenting {
+            self.presentAsModalWindow(viewController)
+        }
     }
 }
 

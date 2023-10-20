@@ -1,8 +1,8 @@
 //
-//  ShakeAnimationViewController.swift
+//  UIControlExtensionsViewController.swift
 //  Demo-iOS
 //
-//  Created by William Towe on 10/15/23.
+//  Created by William Towe on 10/20/23.
 //  Copyright © 2023 Kosoku Interactive, LLC. All rights reserved.
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,10 +19,11 @@
 
 import Feige
 import Foundation
+import os.log
 import Romita
 import UIKit
 
-final class ShakeAnimationViewController: UIViewController {
+final class UIControlExtensionsViewController: UIViewController {
     // MARK: - Private Properties
     private let stackView = UIStackView()
         .setTranslatesAutoresizingMaskIntoConstraints()
@@ -30,35 +31,34 @@ final class ShakeAnimationViewController: UIViewController {
             $0.axis = .vertical
             $0.alignment = .center
         }
-    private let textField = UITextField()
-        .setTranslatesAutoresizingMaskIntoConstraints()
-        .also {
-            $0.borderStyle = .roundedRect
-            $0.placeholder = "Tap the Shake button"
-        }
     private let button = UIButton(type: .system)
         .setTranslatesAutoresizingMaskIntoConstraints()
         .also {
-            $0.setTitle("Shake", for: .normal)
+            $0.setTitle("Block", for: .normal)
         }
+    
+    private let longPressGestureRecognizer = UILongPressGestureRecognizer()
     
     // MARK: - Override Functions
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = ViewModel.Item.shakeAnimation.title
+        self.title = ViewModel.Item.uiControlExtensions.title
         self.view.backgroundColor = .systemBackground
         self.view.addSubview(self.stackView.also {
-            $0.addArrangedSubviews([self.textField, self.button.also {
-                $0.addBlock { [weak self] _, _ in
-                    guard let self else {
-                        return
+            $0.addArrangedSubview(self.button.also {
+                $0.addGestureRecognizer(self.longPressGestureRecognizer.also {
+                    $0.addBlock {
+                        guard $0.state == .began else {
+                            return
+                        }
+                        os_log("Long press block", log: .viewController)
                     }
-                    self.textField.startShakeAnimation()
+                })
+                $0.addBlock { _, _ in
+                    os_log("Button block", log: .viewController)
                 }
-            }])
-            
-            self.textField.pinToSuperviewEdges([.leading, .trailing], edgeInsets: .zero)
+            })
         })
         self.stackView.pinToSuperviewEdges([.leading, .trailing], safeAreaLayoutGuideEdges: .top)
     }

@@ -25,21 +25,6 @@ import UIKit
 public extension UIView {
     // MARK: - Public Properties
     /**
-     Returns the default nib name for the receiver which is its class name.
-     */
-    static var defaultNibName: String {
-        String(describing: self)
-    }
-    
-    /**
-     Returns the default reuse identifier for the receiver which is its class name.
-     */
-    static var defaultReuseIdentifier: String {
-        String(describing: self)
-    }
-    
-    // MARK: -
-    /**
      Returns the first responder or nil if nothing is currently first responder.
      */
     var firstResponder: UIResponder? {

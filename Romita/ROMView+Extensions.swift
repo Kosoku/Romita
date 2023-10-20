@@ -26,6 +26,21 @@ import AppKit
 
 #if os(iOS) || os(tvOS) || os(macOS)
 public extension ROMView {
+    // MARK: - Public Properties
+    /**
+     Returns the default nib name for the receiver which is its class name.
+     */
+    static var defaultNibName: String {
+        String(describing: self)
+    }
+    
+    /**
+     Returns the default reuse identifier for the receiver which is its class name.
+     */
+    static var defaultReuseIdentifier: String {
+        String(describing: self)
+    }
+    
     // MARK: - Public Functions
     /**
      Returns a set of layout constraints that will pin the receiver to `edges` and/or `safeAreaLayoutGuideEdges` of its superview with `edgeInsets`, the provided `priority`, and optionally `activate` the constraints before returning.

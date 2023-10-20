@@ -1,8 +1,8 @@
 //
 //  ViewModel.swift
-//  Demo-iOS
+//  Demo-macOS
 //
-//  Created by William Towe on 10/14/23.
+//  Created by William Towe on 10/20/23.
 //  Copyright © 2023 Kosoku Interactive, LLC. All rights reserved.
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,54 +17,50 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
+import Cocoa
 import Combine
-import Feige
 import Foundation
-import UIKit
+import Feige
+import Romita
 
 extension ViewModel.Snapshot: ScopeFunctions {}
 
 final class ViewModel {
     // MARK: - Public Types
     enum Section: Hashable {
-        case views
         case extensions
+        case views
         
         // MARK: - Public Properties
         var title: String {
             switch self {
-            case .views:
-                return "Views"
             case .extensions:
                 return "Extensions"
+            case .views:
+                return "Views"
             }
         }
     }
     enum Item: Hashable {
         case gradientView
-        case shakeAnimation
-        case uiControlExtensions
+        case nsControlExtensions
         
         // MARK: - Public Properties
         var title: String {
             switch self {
             case .gradientView:
                 return "GradientView"
-            case .shakeAnimation:
-                return "Shake Animation"
-            case .uiControlExtensions:
-                return "UIControl Extensions"
+            case .nsControlExtensions:
+                return "NSControl Extensions"
             }
         }
         
-        var viewControllerForPushing: UIViewController? {
+        var viewControllerForPresenting: NSViewController? {
             switch self {
             case .gradientView:
                 return GradientViewController()
-            case .shakeAnimation:
-                return ShakeAnimationViewController()
-            case .uiControlExtensions:
-                return UIControlExtensionsViewController()
+            case .nsControlExtensions:
+                return NSControlExtensionsViewController()
             }
         }
     }
@@ -79,7 +75,7 @@ final class ViewModel {
     init() {
         self.snapshot = Snapshot().also {
             $0.appendSections([.extensions, .views])
-            $0.appendItems([.shakeAnimation, .uiControlExtensions], toSection: .extensions)
+            $0.appendItems([.nsControlExtensions], toSection: .extensions)
             $0.appendItems([.gradientView], toSection: .views)
         }
     }

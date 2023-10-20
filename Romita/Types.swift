@@ -26,6 +26,10 @@ import UIKit
  */
 public typealias ROMColor = UIColor
 /**
+ Typealias for image values on iOS/tvOS.
+ */
+public typealias ROMImage = UIImage
+/**
  Typealias for point values on iOS/tvOS.
  */
 public typealias ROMPoint = CGPoint
@@ -38,7 +42,13 @@ public typealias ROMLayoutConstraintPriority = UILayoutPriority
  */
 public typealias ROMView = UIView
 #elseif os(watchOS)
+import UIKit
 import WatchKit
+
+/**
+ Typealias for image values on watchOS.
+ */
+public typealias ROMImage = UIImage
 #else
 import AppKit
 
@@ -46,6 +56,10 @@ import AppKit
  Typealias for color values on macOS.
  */
 public typealias ROMColor = NSColor
+/**
+ Typealias for image values on macOS.
+ */
+public typealias ROMImage = NSImage
 /**
  Typealias for point values on macOS.
  */

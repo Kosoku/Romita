@@ -17,6 +17,7 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
+import Feige
 import Foundation
 #if os(iOS) || os(tvOS)
 import UIKit
@@ -64,12 +65,13 @@ public extension UIControl {
     typealias Block = (UIControl, UIControl.Event) -> Void
     
     // MARK: - Private Properties
+    private static var controlEventsToControlBlockWrappersKey = 0
     private var controlEventsToControlBlockWrappers: [UIControl.Event: Set<UIControlBlockWrapper>] {
         get {
-            (objc_getAssociatedObject(self, #function) as? [UIControl.Event: Set<UIControlBlockWrapper>]).valueOrEmpty
+            (objc_getAssociatedObject(self, &Self.controlEventsToControlBlockWrappersKey) as? [UIControl.Event: Set<UIControlBlockWrapper>]).valueOrEmpty
         }
         set {
-            objc_setAssociatedObject(self, #function, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            objc_setAssociatedObject(self, &Self.controlEventsToControlBlockWrappersKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
     }
     
@@ -91,7 +93,11 @@ public extension UIControl {
      - Parameter block: The block to invoke when `controlEvents` are triggered
      */
     func addBlock(forControlEvents controlEvents: UIControl.Event = .touchUpInside, block: @escaping Block) {
-        self.addControlBlockWrapper(.init(block: block, control: self, controlEvents: controlEvents))
+        self.controlEventsToControlBlockWrappers = self.controlEventsToControlBlockWrappers.also {
+            $0[controlEvents] = $0[controlEvents].valueOrEmpty.also {
+                $0.insert(.init(block: block, control: self, controlEvents: controlEvents))
+            }
+        }
     }
     
     /**
@@ -100,22 +106,9 @@ public extension UIControl {
      - Parameter controlEvents: The control events for which all blocks should be removed
      */
     func removeBlocks(forControlEvents controlEvents: UIControl.Event) {
-        var wrappers = self.controlEventsToControlBlockWrappers
-        
-        wrappers[controlEvents] = nil
-        
-        self.controlEventsToControlBlockWrappers = wrappers
-    }
-    
-    // MARK: - Private Functions
-    private func addControlBlockWrapper(_ wrapper: UIControlBlockWrapper) {
-        var dict = self.controlEventsToControlBlockWrappers
-        var wrappers = dict[wrapper.controlEvents].valueOrEmpty
-        
-        wrappers.insert(wrapper)
-        dict[wrapper.controlEvents] = wrappers
-        
-        self.controlEventsToControlBlockWrappers = dict
+        self.controlEventsToControlBlockWrappers = self.controlEventsToControlBlockWrappers.also {
+            $0[controlEvents] = nil
+        }
     }
 }
 #endif
