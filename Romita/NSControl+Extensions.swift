@@ -60,6 +60,7 @@ public extension NSControl {
      
      - Parameter block: The block to set
      - Returns: The receiver
+     - SeeAlso: https://en.wikipedia.org/wiki/Builder_pattern
      */
     @discardableResult
     func setBlock(_ block: @escaping Block) -> Self {

@@ -79,6 +79,7 @@ public extension UIGestureRecognizer {
      
      - Parameter block: The block to add
      - Returns: The receiver
+     - SeeAlso: https://en.wikipedia.org/wiki/Builder_pattern
      */
     @discardableResult
     func addBlock(_ block: @escaping Block) -> Self {

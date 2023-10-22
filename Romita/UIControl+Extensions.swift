@@ -92,6 +92,7 @@ public extension UIControl {
      - Parameter controlEvents: The control events that should invoke `block`
      - Parameter block: The block to invoke when `controlEvents` are triggered
      - Returns: The receiver
+     - SeeAlso: https://en.wikipedia.org/wiki/Builder_pattern
      */
     @discardableResult
     func addBlock(forControlEvents controlEvents: UIControl.Event = .touchUpInside, block: @escaping Block) -> Self {
