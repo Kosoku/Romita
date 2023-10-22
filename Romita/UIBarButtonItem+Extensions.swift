@@ -56,6 +56,19 @@ public extension UIBarButtonItem {
     // MARK: - Private Properties
     private static var blockKey = 0
     
+    // MARK: - Public Functions
+    /**
+     Sets the provided `block` on the receiver and returns the receiver.
+     
+     - Parameter block: The block to set
+     - Returns: The receiver
+     */
+    @discardableResult
+    func setBlock(_ block: @escaping Block) -> Self {
+        self.block = block
+        return self
+    }
+    
     // MARK: - Private Functions
     @objc
     private func blockAction(sender: UIBarButtonItem) {

@@ -87,17 +87,20 @@ public extension UIControl {
     }
     
     /**
-     Add a `block` to be invoked when the provided `controlEvents` are triggered.
+     Add a `block` to be invoked when the provided `controlEvents` are triggered and returns the receiver.
      
      - Parameter controlEvents: The control events that should invoke `block`
      - Parameter block: The block to invoke when `controlEvents` are triggered
+     - Returns: The receiver
      */
-    func addBlock(forControlEvents controlEvents: UIControl.Event = .touchUpInside, block: @escaping Block) {
+    @discardableResult
+    func addBlock(forControlEvents controlEvents: UIControl.Event = .touchUpInside, block: @escaping Block) -> Self {
         self.controlEventsToControlBlockWrappers = self.controlEventsToControlBlockWrappers.also {
             $0[controlEvents] = $0[controlEvents].valueOrEmpty.also {
                 $0.insert(.init(block: block, control: self, controlEvents: controlEvents))
             }
         }
+        return self
     }
     
     /**

@@ -75,14 +75,17 @@ public extension UIGestureRecognizer {
     
     // MARK: - Public Functions
     /**
-     Adds the provided `block` to set of blocks that are invoked when the receiver is triggered.
+     Adds the provided `block` to set of blocks that are invoked when the receiver is triggered and returns the receiver.
      
      - Parameter block: The block to add
+     - Returns: The receiver
      */
-    func addBlock(_ block: @escaping Block) {
+    @discardableResult
+    func addBlock(_ block: @escaping Block) -> Self {
         self.gestureRecognizerBlockWrappers = self.gestureRecognizerBlockWrappers.also {
             $0.insert(.init(block: block, gestureRecognizer: self))
         }
+        return self
     }
     
     /**
