@@ -13,6 +13,110 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 # Available Actions
 
+### encrypt
+
+```sh
+[bundle exec] fastlane encrypt
+```
+
+Encrypt platform specific files
+
+- `openssl_password`: The openssl password to use when encrypting files
+
+### decrypt
+
+```sh
+[bundle exec] fastlane decrypt
+```
+
+Decrypt certificates and profiles
+
+- `openssl_password`: The openssl password to use when decrypting files
+
+- `platform_name`: The platform name (ios/android)
+
+### print_full_version
+
+```sh
+[bundle exec] fastlane print_full_version
+```
+
+Prints the full version (e.g. "1.0.0 (1)")
+
+- `include_platform_prefix`: Whether to include the platform name in the returned string
+
+- `include_version_prefix`: Whether to include the version prefix in the returned string
+
+----
+
+
+## Android
+
+### android print_properties_file_key
+
+```sh
+[bundle exec] fastlane android print_properties_file_key
+```
+
+Print properties file key
+
+- `key`: The properties file key to print
+
+- `path`: The path to the properties file
+
+### android print_properties_file_version_name_key
+
+```sh
+[bundle exec] fastlane android print_properties_file_version_name_key
+```
+
+Prints the versionName key from the build properties file
+
+- `build_properties_path`: The path to the build properties file
+
+### android print_properties_file_version_code_key
+
+```sh
+[bundle exec] fastlane android print_properties_file_version_code_key
+```
+
+Prints the versionCode key from the build properties file
+
+- `build_properties_path`: The path to the build properties file
+
+### android set_properties_file_key
+
+```sh
+[bundle exec] fastlane android set_properties_file_key
+```
+
+Set properties file key
+
+- `key`: The properties file key to set
+
+- `value`: The new value for the properties file key
+
+- `path`: The path to the properties file
+
+### android set_version_code_git_commit_count
+
+```sh
+[bundle exec] fastlane android set_version_code_git_commit_count
+```
+
+Set version code to git commit count
+
+### android update_version_code
+
+```sh
+[bundle exec] fastlane android update_version_code
+```
+
+Update version code
+
+----
+
+
 ## iOS
 
 ### ios lint_local_podspec
@@ -79,6 +183,26 @@ Print info plist key
 
 - `path`: The info plist path
 
+### ios print_info_plist_bundle_short_version_string_key
+
+```sh
+[bundle exec] fastlane ios print_info_plist_bundle_short_version_string_key
+```
+
+Print info plist bundle short version string key
+
+- `path`: The info plist path
+
+### ios print_info_plist_bundle_version_key
+
+```sh
+[bundle exec] fastlane ios print_info_plist_bundle_version_key
+```
+
+Print info plist bundle version key
+
+- `path`: The info plist path
+
 ### ios update_docs
 
 ```sh
@@ -101,6 +225,40 @@ Create push git tag
 
 - `info_plist_path`: The info plist path
 
+### ios update_version_string
+
+```sh
+[bundle exec] fastlane ios update_version_string
+```
+
+Updates the version string
+
+- `version_string`: The version string to update to
+
+- `info_plist_path` The path to the info plist to update
+
+- `podspec_path`: The path to the podspec to update
+
+### ios increment_version
+
+```sh
+[bundle exec] fastlane ios increment_version
+```
+
+Increments the version
+
+- `info_plist_path` The path to the info plist to update
+
+### ios set_version_git_commit_count
+
+```sh
+[bundle exec] fastlane ios set_version_git_commit_count
+```
+
+Set version to git commit count
+
+- `info_plist_path` The path to the info plist to update
+
 ### ios update_version
 
 ```sh
@@ -109,11 +267,9 @@ Create push git tag
 
 Updates the version
 
-- `version_name`: The version name to update to
+- `version`: The version to update to
 
 - `info_plist_path` The path to the info plist to update
-
-- `podspec_path`: The path to the podspec to update
 
 ----
 
