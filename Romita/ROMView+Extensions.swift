@@ -47,13 +47,19 @@ public extension ROMView {
      
      - Parameter edges: The edges to pin to, the default is `NSDirectionalRectEdge.all`
      - Parameter safeAreaLayoutGuideEdges: The safe area layout guide edges to pin to, takes priority over `edges`
-     - Parameter edgeInsets: The edge insets to inset the receiver from the edges of its superview
+     - Parameter edgeInsets: The edge insets to inset the receiver from the edges of its superview, the default is `NSDirectionalEdgeInsets.zero`
      - Parameter priority: The layout constraint priority to apply to the returned constraints, the default is `ROMLayoutConstraintPriority.required - 1.0`
      - Parameter activate: Whether to activate the layout constraints before returning them
      - Returns: The layout constraints
      */
     @discardableResult
-    func pinToSuperviewEdges(_ edges: NSDirectionalRectEdge = .all, safeAreaLayoutGuideEdges: NSDirectionalRectEdge = [], edgeInsets: NSDirectionalEdgeInsets? = nil, priority: ROMLayoutConstraintPriority = .required - 1.0, activate: Bool = true) -> [NSLayoutConstraint] {
+    func pinToSuperviewEdges(
+        _ edges: NSDirectionalRectEdge = .all,
+        safeAreaLayoutGuideEdges: NSDirectionalRectEdge = [],
+        edgeInsets: NSDirectionalEdgeInsets? = .zero,
+        priority: ROMLayoutConstraintPriority = .required - 1.0,
+        activate: Bool = true
+    ) -> [NSLayoutConstraint] {
         guard let superview = self.superview else {
             fatalError("superview cannot be nil")
         }
