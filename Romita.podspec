@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'Romita'
-  s.version = '2.2.1'
+  s.version = '2.3.0'
   s.summary = 'Romita is a Swift iOS/macOS/tvOS/watchOS framework that extends the AppKit, UIKit, and WatchKit frameworks.'
 
   s.description = <<-DESC
